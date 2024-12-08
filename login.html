@@ -1,0 +1,49 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+   <div class = "login">
+    <h2>Login </h2>
+   
+    <form >
+        <div class="user email">
+            <input type="email" name="email" placeholder="example@gmail.com">
+            <script>  
+            var emailRegex = /^[^s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test (email)) {
+                alert ('Please enter a valid email.');
+                return false;
+            }
+            </script>
+        </div>
+
+
+<div class  ="user password " >
+  <input type = "password " name = " password" 
+  placeholder=" Password" >
+  <script>
+   var passwordRegex = /^[a-zA-Z\s]+$/;
+var password = "your_password_here"; 
+if (!passwordRegex.test(password)) {
+    alert('Password can only contain letters and spaces.');
+    return false;
+}
+
+if (password.length < 6) {
+    alert('Password must be at least 6 characters.');
+    return false;
+}
+  </script>
+</div>
+
+<button  type ="submit " > Submit</button>
+    </form>
+    </div>
+</body>
+</html>
